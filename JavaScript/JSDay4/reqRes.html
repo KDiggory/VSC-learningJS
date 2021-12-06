@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <br>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+       
+                <button id="clear">Clear page</button>
+                <button id="listUser">List Users</button>
+                <button id="listUserByid">List User by id: 7</button>
+                <button id="deleteAll">Delete all </button>
+            </div>
+        </div>
+        <div class="row"> 1st row
+            <div class="col col-md-3"> col 1
+                <form id="creating">
+                    <h1>Creating</h1>
+                    <br>
+                    <label class="form-label" for="firstName">First name</label class="form-label">
+                    <input class="form-control" type="text" id="firstName" />
+                    <br>
+                    <label class="form-label" for="lastName">Last name</label>
+                    <input class="form-control" type="text" id="lastName" />
+                    <br>
+                    <label class="form-label" for="email"> email </label>
+                    <input class="form-control" type="text" id="email" />
+                    <br>
+                    <label class="form-label" for="userId">User id</label>
+                    <input class="form-control" type="number" id="userId" />
+
+                    <button>submit</button>
+                    <button>reset</button>
+           
+        </div>
+        <div class="col col-md-3"> col 2
+                </form>
+                <section>
+                    <form id="registration">
+                        <h1>Registration</h1>
+                        <br>
+                        <label class="form-label" for="registrationEmail">Email address</label>
+                        <input class="form-control" type="text" id="registrationEmail" name="registrationEmail" />
+                        <br>
+                        <label class="form-label" for="password">password</label>
+                        <input class="form-control" type="password" id="password" name="password" />
+                        <button>submit registration</button>
+                        <br>
+                        <br>
+                        <!-- <button>reset registration</button> -->
+                    </form>
+                    <section id="login">
+                        <form id="login">
+                            <h1>Login</h1>
+                            <br>
+                            <label class="form-label" for="loginEmail">Email address</label>
+                            <input class="form-control" type="text" id="loginEmail" name="loginEmail" />
+                            <br>
+                            <label class="form-label" for="loginPassword">password</label>
+                            <input class="form-control" type="password" id="loginPassword" name="loginPassword" />
+                            <button>submit login</button>
+                            <!-- <button>reset login</button> -->
+                        </form>
+                    </div>
+                    <div class="col col-md-3"> col 3
+                        <form id="userIdSingleForm">
+                            <h1>Get user By Id</h1>
+                            <label class="form-label" for="userIdSingle">User Id</label>
+                            <input class="form-control" type="number" id="userIdSingle" />
+                            <button>submit</button>
+                        </form>
+                        <br>
+                        <h1>Delete user By Id</h1>
+                        <label class="form-label" for="deleteUserId">User id</label>
+                        <input class="form-control" type="number" id="deleteUserId" />
+                        <button id="delete">delete</button>
+                    </div> 
+        </div>
+
+        <section id="outputSection">
+            <hr>
+            <h1>Output</h1>
+            <hr>
+            <div id="output"> </div>
+            
+        </section>
+    </div>
+
+    <script src="reqRes.js"></script>
+</body>
+
+</html>
