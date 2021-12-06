@@ -1,0 +1,59 @@
+---------------Introduction to web development---------------
+
+Server side - back end (Java), databases
+
+Client side - when you use a website you are the user.client.
+Code is all running in your browser.
+
+Websites can communicate with the backend so you dont have to use scanner on the command line to get information from the user. 
+
+
+HTML, CSS and JavaScript (JS) - the main client side languages.
+HTML and CSS arent programming languages - they don't have logic. 
+JavaScript is a programming language.
+
+
+Backend can be written in pretty much any programming language. 
+Client side is different, you have to use HTML, CSS and Javascript.
+Any other technology used in webdev, is just a fancy way of making HTML, CSS and JS.
+
+For a long time JS was a bad language, it was not good but over the years it has massively been improved. 
+
+---------------HTML---------------
+
+HTML - Hyper Text Markup Language (XML is also a markup language - like the pom file!)
+<html>
+    <head>
+    </head>
+        <body>
+        </body>
+</html>
+HTML uses tags to denote sections. 
+If a webpage is a body, then HTML is the skeleton that provide the structure of the webpage. 
+
+There is so much in HTML and CSS! Won't learn them all. There are 142 different HTML tags! Can go and learn on my own as once you know how they work you can use any. 
+
+
+---------------CSS---------------
+
+Cascading style sheets
+    - like the skin of a website. Governs the style of the webpage.
+Relatively simple! Can do complex things in them, but it wont complain so much about an errant bracket etc.
+input {
+    color: red;
+}
+
+---------------JavaScript---------------
+
+This is a programming language.
+This is like the muscles of the webpage. 
+If the page does something, it is probably javascript that does it!
+
+***JavaScript is NOT OOP***
+You can, unlike python but you dont need to as it is a functional language. 
+
+
+
+---------------Resources---------------
+W3Schools - extensive but basic
+MDN - comprehensive but harder to get into 

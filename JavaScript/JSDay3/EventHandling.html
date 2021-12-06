@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- This is for event handling! -->
+    <main> 
+    <button onclick='alert("Hello!");'>CLICK ME</button>   
+    <!-- This first button does things without accessing the JS script -->
+    <br>
+    <button onclick="handleClick();"> CLICK ME INSTEAD</button>
+    <br> 
+    <!-- This second button calls a function from the JS script -->
+        <section>
+            <label for="kms">KMs</label>
+            <input type ="number" id="kms" oninput="convertKmToMiles()"/>
+            <br>
+            <label for="miles">Miles</label>
+            <input type ="number" id="miles" oninput="convertMilesToKm()"/>
+        </section>
+
+    
+</main>
+    <script src='EventHandling.js'></script>
+    
+</body>
+</html>

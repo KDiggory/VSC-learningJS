@@ -1,0 +1,138 @@
+h1 {
+    color: rgb(217, 6, 224);
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: rgba(5, 5, 5, 0.801);
+    display: flex;
+    justify-content: center;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: block;
+    margin : 0 auto;  
+}
+
+p {column-count:2}
+.button {
+    color: rgb(0, 0, 0);
+    background: rgb(233, 22, 187) ;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px;
+}
+
+.emptybutton {
+    color:  #92d4f5;
+    background:  #92d4f5;
+    padding: 26px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px;
+    border: none;
+}
+.operatorButton {
+    color: rgb(255, 255, 255);
+    background: rgb(71, 2, 56) ;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 10px;
+
+}
+
+#calcButtons { 
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #92d4f5;
+  }
+  #row1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+
+  }
+  #row2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+      
+}
+#row3 {
+    display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow:hidden;
+  align-items: center;
+  justify-content:center;
+      
+}
+#row3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+      
+}
+#row4 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+      
+}
+
+#row5 {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+      
+}
+
+#calcButtons > a {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background: #E91E63;   
+    margin: 15px;
+    
+}
+
+#clear {
+    background: #e9b013;   
+}
+
+#equals {
+    background: #e9b013;   
+}

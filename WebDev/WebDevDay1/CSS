@@ -1,0 +1,47 @@
+CSS - cascading style sheet
+
+There are 520 distinct properties you can set in CSS!! Wont go through all but once you know how to apply them you can work it all out. 
+
+-------- In line --------
+
+In line styling - adding the style attribute to a tag
+<tag style = " ">
+Easiest type of styling but have to be careful when using it, its not the best way to do things!
+It is good for styling an individual element, but can be hard to over write. 
+
+-------- Internal styling --------
+
+<style>
+h1 {font-size:15pt;font-weight:bold}
+ p {font:bolditalic 12pt/20pt Times,serif} 
+</style>
+But this only styles that particular page
+
+-------- External styling --------
+Write an external CSS file, then you import this into your page
+
+If have 2 imported files, the one you imported second will override things that are set in both. 
+
+-------- Selectors --------
+Selectors are how you apply different properties.
+Specificity - the more specific selector wins! Eg if you say all text is purple, and h1 text is pink, then the h1 text will be pink and the rest purple.
+
+tag = least specific selector
+class = mediumly specific selector --> is an attribute used to group elements together. 
+id = most specific selector.
+// Nothing beats an id selector - except inline styling, as that overrides everything! A reason why we don't tend to use this. 
+
+Class - if you want to style h1 and h2 the same for example, you would set them as the same class. In the css sheet these are referred to as .className
+
+To reference an id you use a #
+#idName
+
+id > class > tag
+
+Can make them more specific by combining more things
+eg h1.className is more specific than .className
+
+** Can make things a different colour when you hover over it!
+a:hover {
+    
+}

@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(190, 190, 241);
+    
+        font-family: Helvetica, Verdana, Arial, sans-serif
+  }
+  h1 {
+    color: navy;
+    margin-left: 20px;
+    font: italic xx-large 1.2em Georgia, serif;
+    text-transform: uppercase;
+    text-indent: 20% ;
+    letter-spacing: 50px;
+  }
+  h2 {
+    color: rgb(44, 44, 182);
+    margin-left: 30px;
+    font:  large 1.2em Georgia, serif;
+    
+
+  }
+  h3 {
+    color: rgb(213, 66, 233);
+    margin-left: 30px;
+    font:  medium 1.2em Georgia, serif;
+
+  }
+  p {
+    color: rgb(44, 1, 94);
+    margin-left: 30px;
+    font:  medium 1.2em Georgia, serif;
+
+  }
+  ul {
+    color: rgb(44, 1, 94);
+    margin-left: 60px;
+    font:  medium 1.2em Georgia, serif;
+
+  }
+  ol {
+    color: rgb(44, 1, 94);
+    margin-left: 60px;
+    font:  medium 1.2em Georgia, serif;
+
+  }

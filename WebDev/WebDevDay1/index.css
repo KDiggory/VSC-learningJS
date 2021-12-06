@@ -1,0 +1,30 @@
+p{
+    color: green;
+}
+.heading{
+    color:crimson;
+
+}
+h1 {
+    color: darkolivegreen;
+
+}
+body {
+    color:darkred ;
+}
+tables {
+    color:darkgoldenrod;
+}
+a {color: black; }
+a:link {color: blue; }
+a:visited {color: red; }
+a:hover {color: green; }
+a:active {color: orange; }
+
+a[href^="http:"] { color: blue; }
+
+p::first-line{
+    color: red;
+    font-variant: small-caps;
+}
+p {column-count:2}

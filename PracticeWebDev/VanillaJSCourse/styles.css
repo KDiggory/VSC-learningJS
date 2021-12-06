@@ -1,0 +1,28 @@
+
+.heading{
+    color:black;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+body {
+     color:black;
+     display: flex;
+  justify-content: center;
+}
+
+h4 {
+    color:black;
+    display: flex;
+ justify-content: center;
+}
+
+a {color: black; }
+a:link {color: blue; }
+a:visited {color:black; }
+a:hover {color: green; }
+a:active {color: orange; }
+
+a[href^="http:"] { color: blue; }

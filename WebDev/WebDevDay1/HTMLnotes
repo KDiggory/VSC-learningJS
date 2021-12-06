@@ -1,0 +1,122 @@
+------------Tags------------
+
+<p>                 opening tag
+Hello, world!       data
+</p>                closing tag
+
+This is a paragraph
+
+Can also have self closing Tags
+
+<input>             This is self closing so no end tag. Can also be written as <input/> - this is the old way of doing it though. 
+This is a text box.
+
+------------Attributes------------
+<input type = "text">
+<input type = "password">
+<input type = "number">
+
+The types are the attributes and they tell you about the tag.
+
+------------Webpage structure------------
+<html>
+    <head>
+        data ab out the page - metadata
+    </head>
+    <body>
+        content
+    </body>
+<html>
+
+---------- Document Object Model ----------
+Is basically the webpage in a tree structure
+                html
+        /                   \
+    head                    body
+    |     \               |    |      \
+meta    title            p   input   image
+
+
+---------- Semantic elements ----------
+
+To divide webpage you use the <div> tag.
+div - divider --> groups elements together
+div doesn't get rendered on the page, it just allows you to group things together which is useful for styling. 
+This changes how the DOM would look
+
+                html
+        /                   \
+    head                    body
+    |     \               |    |     
+meta    title            p      div
+                              /     \
+                            input   image 
+
+In HTML5 there are new dividers
+main
+section
+article
+header
+footer
+navigation bar
+aside (a side bar)
+
+Will not see a difference when using these - but why have them?
+
+Search Engine Optimisation (SEO)--> how you get a search engine to notice you!
+Properly structured webpages are more likely to be prioritised by search engines. 
+Also a legal requirement for this -> Accessibility. 
+            If someone has a disability and needs to use a screen reader, the screen reader works much better with these dividers.
+
+So.. no harder to use than a normal div, but makes website more accessible for disabled users and increases SEO. 
+
+---------- Headings ----------
+h1 -- big
+h2
+h3
+h4 -- regular text size
+h5
+h6 -- small
+
+---------- Text decoration ----------
+
+---------- Hyperlinks ----------
+These are put in anchor tags 
+<a href="www.kfmsnkdfbjvisjdnv.com">
+    Home
+</a>
+Can hyperlink to something in the same folder using ./ -- makes it more explicit
+../ means up one folder
+
+---------- Lists ----------
+Two types, ordered and unordered
+<ol></ol> - tag for an ordered list --> will be numbered
+<ul></ul> - tag for an unordered list --> wont be numbered
+Each list element is marked with <li></li>
+
+A dropdown is done using <select></select>
+Each element marked with <option></option>
+or <option value="KD"> Katherine Louise Diggory </option> - this shortens the value that you refer to later on rather than using the fill dropdown option. Easier for coding in JS. 
+
+Can also group the options! <optgroup></optgroup>
+
+
+---------- Images ----------
+
+<img id = "picId" src=" " alt="Text that shows if pic doesnt load">
+The id is how you can refer to a specific element -> so can integrate with CSS and JS
+
+---------- Forms ----------
+
+For submitting data
+<form action="mystery">
+<label for>Username</label>
+<input type = "text" name = "" id="" >
+<label for>Password</label>
+<input type = "text" name = "" id="" >
+
+
+
+
+
+

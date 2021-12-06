@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+    <h1>
+        This is a heading for my Webpage!
+    </h1>
+    <h1>Images</h1>
+    <img id = "fam" src="C:\Users\kdorm\Pictures\This mad bunch\The Diggorys117-Edit" alt="Our famalam"> <!-- Working internally you relative paths, working externally you dont use relative path-->
+ <!-- This picture doesn't work on this, dont totally know how to fix it. Something about the relative path?--> 
+ <h1>Forms --> Lets submit some data!</h1>   
+ <form action="/api/login" method="get">
+    <label for="form1UserName">Username</label>
+    <input type = "text" name="username" id="form1UserName" > <!-- name is generally only used in imput in forms -> it will put the username password in the url. -->
+    <br>
+    <label for="form1Password">Password</label>                 <!-- Need to name fields else essentially theyt dont exist -->
+    <input type = "text" name = "password" id="form1Password" >
+    <br> <!-- This adds a break in - makes it wasier to read-->
+    <label for="form1RememberMe">Remember me</label>
+    <input type = "checkbox" name="remember" id="form1RememberMe" >
+    <!-- Putting in the for, makes it more user friendly. It means you can click on the text next to it and the box is selected. -->
+    <button type="submit">Submit</button> <!-- Default type of button is submit-->
+    <!-- Once you hit submit then the url will get a question mark after it-->
+    <!-- When you submit, the entries are allocated to the names in key value pairs. -->
+    <button type="reset">Reset</button>
+    </form>
+
+    <h1>  Tables! </h1>
+    <table>
+        <thead>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Specailism
+            </th>
+        </thead>
+        <tbody>
+            <tr> <!-- tr is a row-->
+                <td> Katie </td> <!-- td is table data cell-->
+                <td> 34 </td>
+                <td> Software Engineer </td>
+            </tr>
+            <tr> 
+                <td> George </td> 
+                <td> 33 </td>
+                <td>GP </td>
+            </tr>
+            <tr> 
+                <td> Huxley </td> 
+                <td> 3 </td>
+                <td>Threenager </td>
+            </tr>
+            <tr> 
+                <td> Oswin </td> 
+                <td> 1 </td>
+                <td>Cutie </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</main>
+</body>
+</html>

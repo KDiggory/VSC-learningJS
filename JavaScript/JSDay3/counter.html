@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        main {
+            max-width: 20%;
+            display: grid;
+        }
+        main > div {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.5em;
+        }
+    </style>
+    
+</head>
+<body> <header>
+    <h1>Let's count!!</h1>
+</header>
+    <main>
+        <section>
+            <label for="current">Your number currently</label>
+            <input type ="number" id="counter" value = "0"/>
+            <br>
+    <p> What would you like to do?</p>
+    <button class="counterButton" id="minusOne" onclick="updateCounter(-1)">-1</button>  
+    <button class="counterButton" id="minusFive" onclick="updateCounter(-5)">-5</button> 
+    <button class="counterButton" id="reset" onclick="reset()">R</button> 
+    <button class="counterButton" id="plusOne" onclick="updateCounter(+1)">+1</button> 
+    <button class="counterButton" id="plusFive" onclick="updateCounter(+5)">+5</button> 
+
+    <p> Where has your number been?</p>
+    <div id="history"> </div>
+    <header>
+        <h1>Let's count, using a more complex JS script!!</h1>
+    </header>
+        <main>
+            <section>
+                <label for="current2">Your number currently</label>
+                <input type ="number" id="counter2" value = "0"/>
+                <br>
+        <p> What would you like to do?</p>
+        <button class="counterButton" id="minusOne2" onclick="maths(event)">-1</button>  
+        <button class="counterButton" id="minusFive2" onclick="maths(event)">-5</button> 
+        <button class="counterButton" id="reset2" onclick="maths(event)">R</button> 
+        <button class="counterButton" id="plusOne2" onclick="maths(event)">+1</button> 
+        <button class="counterButton" id="plusFive2" onclick="maths(event)">+5</button> 
+    
+        <p> Where has your number been?</p>
+        <div id="history2"> </div>
+
+    
+    </main>
+    <script src='counter.js'></script> 
+</body>
+</html>

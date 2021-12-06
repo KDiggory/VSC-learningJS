@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+</head>
+<link rel="stylesheet" href="calculator.css">
+<body> <header>
+    <h1>Let's calculate!!</h1>
+    <h3>In far fewer lines than before.</h3>
+</header>
+    <main>
+        <section>
+            <label for="current"></label>
+            <input type ="number" class="box" id="counter" readonly  />
+            <br>
+    <p> Here are the lovely buttons <3 </p>
+    <div  id="calcButtons"> 
+    <div id="row1">
+    <button class="button" id="zero" >0</button>
+    <button class="button" id="three" >3</button> 
+    <button class="button" id="six" >6</button> 
+    <button class="emptybutton"> </button>
+    
+       
+</div>
+<div id="row2">
+    <button class="button" id="one" >1</button> 
+    <button class="button" id="four" >4</button> 
+    <button class="button" id="seven" >7</button>
+    <button class="button" id="nine" >9</button> 
+</div>
+<div id="row3">
+    <button class="button" id="two" >2</button>
+    <button class="button" id="five" >5</button> 
+    <button class="button" id="eight" >8</button>
+    <button class="emptybutton"> </button>
+    
+</div>
+ 
+</div>
+<div id="row4">
+    <button class="operatorButton" id="minus" >-</button> 
+    <button class="operatorButton" id="plus" >+</button>
+    <button class="operatorButton" id="times" >*</button>
+    <button class="operatorButton" id="divide" >/</button>   
+     
+</div>
+<div id="row5">
+    <button class="operatorButton" id="clear">Clear</button> 
+    <button class="operatorButton" id="equals">=</button>  
+</div>
+    </div>
+    <p> What is the answer?</p>
+    <div id="history"> </div>
+    
+
+    
+    </main>
+    <script src='calculatorRetry.js'></script> 
+</body>
+</html>

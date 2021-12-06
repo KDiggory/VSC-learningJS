@@ -1,0 +1,80 @@
+---------- JavaScript ----------
+================================
+
+Is a scripting language but is not based on Java - just chosen because java was popular at the time. 
+It has a similar syntax to java with {} though.
+
+It is the language of the web - it is the only language a browser can run!
+It is becoming increasingly popular backend as well - nodeJS --> this is based on the chrome engine but you dont actually need a breowser to run it.
+
+Biggest difference between Java and JavaScript:
+No classes in JavaScript
+Loosely and dynamically typed
+    Loosely = don't define the type when declaring the variable
+    Dynamically = variable type can change (the same as python)
+
+----- variables in JS -----
+
+let x = 12;
+    x = true;
+    x = 'hello'
+
+x can change type, it doesnt matter!
+
+Don't need to say what type it is, and also you can also change the type after assigning a variable!
+
+a variable is a variable - no matter what it is.
+
+How does JS talk to Java? Java parses the JS data into Java data. Will need a data transfer medium such as data transfer requests.  Get, put etc.
+
+let - go to way of making a variable.
+The only other way you should use is const.
+const a = 'hello' --> this one can't be reassigned. Like the final keyword in Java. CANNOT reassign the value. It can be modified though, like in java using setters. 
+
+----- Scope -----
+
+Where variables can be accessed. 
+
+In JS - there are the same rules for lets and consts --> The nearest set of { } 
+(Not the end of the story, but what we need to know for now for lets and consts)
+{let x = 2;
+{let y= 3} --> Because y is in a different set of curly brackets it is inacessible! So z doesnt work
+let z = x + y;
+}
+
+----- Data Types -----
+
+String - in JS no chars, they are all classed as strings. In JS its convention to use single quotes. Important to be consistent rather than mixing between the two!
+boolean - true or false
+number - in JS there are no distinction between ints and doubles
+bigint - kind og like a long in Java, just a big number basically. 
+symbol - quite a new variable type, not really used, quite niche. Mostly used for unique identifiers
+null - not a 0, or an empty string, or an empty array
+undefined - less than null
+object - arrays, dates, functions
+
+Primitive data types - not based off an object. 
+In JS only object is not a primitive. This is because they have attributes and behaviours. 
+
+The rest are all primitives as they are just a value.
+
+----- Using JS -----
+
+By default web browsers assume your JS is old, like from 1997!
+This can cause issues when writing JS!
+JS scripts are imported into your html just like a CSS file
+
+Technically putting the JS script at the top makes it a bit slower for the html to load. Instead you should put it at the bottom as you want html things to load first because usually any JS is wanted to interact with the page somehow. 
+
+----- Old and Dodgy -----
+
+var - a way of assigning a variable. This is the original way of declaring a variable. Let and const have only been around for 6 years!
+
+var doesn't follow the same kind of rules as let and const
+
+
+
+
+
+
+
