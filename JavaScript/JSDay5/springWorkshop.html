@@ -12,17 +12,36 @@
     <title>SpringWorksop.html</title>
 </head>
 <body>
+    <button id="clear">Clear This page</button>
     <button id="read">Get All Projects</button>
     <button id="readById">Get Project by Id</button>
+    
     <br>
     <label class="form-label" for="readUserId">User id</label>
     <input class="form-control" type="number" id="readUserId" />
-    <button id="readByName">Get Project by Name</button>
-    <button id="readByDays">Get Project by days</button>
     <hr>
-    <button id="Create">Create a project</button>
-    <button id="update">Update a project</button>
-
+    <h3>Create a new project</h3>
+    <form id="creating">
+        <div class="form-group">
+            <label for="projectName">Project Name</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="name">
+    </div>
+    <div class="form-group">
+    <label for="projectDays">Time to complete</label>
+    <input type="text" class="form-control" id="daysInput" placeholder="days">
+  </div>
+  <div class="form-group">
+    <label for="projectEase">Difficulty</label>
+    <input type="text" class="form-control" id="difficultyInput" placeholder="difficulty">
+  </div>
+  <div class="form-group">
+    <label for="projectMaterials">Materials</label>
+    <input type="text" class="form-control" id="MaterialsInput" placeholder="materials">
+  </div>
+</label>
+</div>
+<button type="submit">Submit</button>
+<button type="submit">Reset</button>
     <section id="outputSection">
         <hr>
         <h1>Output</h1>

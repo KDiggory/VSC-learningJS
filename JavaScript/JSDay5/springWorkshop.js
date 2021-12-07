@@ -23,10 +23,10 @@ promisesPromises.then(onSuccess).catch(onFailure);
 const baseURL = "http://localhost:8080";
 
 axios.get(`${baseURL}/`)
-    .then(res => { // handle response with callback
+    .then(res => { 
         console.log(res);
         console.log("DATA: ", res.data);
-    }).catch(err => console.log(err)); // handle error
+    }).catch(err => console.log(err));
 
 // })
 
@@ -60,12 +60,12 @@ const readAllProjects = () => {
 
                 const projectDays = document.createElement("p");
                 projectDays.classList.add("card-text");
-                projectDays.innerText = `days: ${projects[i].easy}`;
+                projectDays.innerText = `days: ${projects[i].days}`;
                 output.appendChild(projectDays);
 
                 const projectEase = document.createElement("p");
                 projectEase.classList.add("card-text");
-                projectEase.innerText = `days: ${projects[i].days}`;
+                projectEase.innerText = `Ease: ${projects[i].easy}`;
                 output.appendChild(projectEase);
 
                 const projectId = document.createElement("p");
@@ -75,7 +75,7 @@ const readAllProjects = () => {
 
                 const projectMaterials = document.createElement("p");
                 projectMaterials.classList.add("card-text");
-                projectMaterials.innerText = `id: ${projects[i].materials}`;
+                projectMaterials.innerText = `Materials: ${projects[i].materials}`;
                 output.appendChild(projectMaterials);
 
                 const projectDel = document.createElement("button");
@@ -128,12 +128,12 @@ const readById = () => {
 
             const projectDays = document.createElement("p");
             projectDays.classList.add("card-text");
-            projectDays.innerText = `days: ${project.easy}`;
+            projectDays.innerText = `Days: ${project.days}`;
             output.appendChild(projectDays);
 
             const projectEase = document.createElement("p");
             projectEase.classList.add("card-text");
-            projectEase.innerText = `days: ${project.days}`;
+            projectEase.innerText = `Ease: ${project.easy}`;
             output.appendChild(projectEase);
 
             const projectId = document.createElement("p");
@@ -163,5 +163,37 @@ const readById = () => {
         })
     .catch(err => console.log(err));
 }
+
+const clear = () => {
+    output.innerText="";
+}
+
+
+
+document.querySelector("button#clear").addEventListener("click", clear);
 document.querySelector("button#read").addEventListener("click", readAllProjects);
 document.querySelector("button#readById").addEventListener("click", readById);
+
+document.querySelector("#creating").addEventListener("submit", function (event) {
+    event.preventDefault(); // this stops the page refreshing and you losing your data
+    console.log("This:", this);
+    const form = this;
+    console.log("COLOUR: ", form.colour);
+    const data = {
+        name: form.name.value,
+        days: form.days.value,
+        easy: form.difficulty.value,
+        materials: form.materials.value
+    }
+    console.log("DATA: ", data);
+    axios
+        .post("${baseURL}//createProject", data)
+        .then(res => {
+            console.log("In the axios post"); // this comes up so it should be working? something to do with the resreq api it uses? 
+            getUsers();  // this should get the users with the new one added. 
+            form.reset(); // resets the form
+            form.firstName.focus(); // puts the cursor in the name field
+            console.log(res);
+        })
+        .catch(err => console.error(err));
+})
