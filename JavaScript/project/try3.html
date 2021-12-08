@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Almendra Display' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap WILL work</title>
+    <link rel="stylesheet" href="CSStry3.CSS">
+</head>
+<body>
+    <div class="row">
+        <div class="leafContainer" class="col-md-12"  >
+            <img id="plants" src="images/botanical.png" alt="The outline of a stylised leaf">
+            <img id="plantsL" src="images/flowersFlip.png" alt="The outline of a stylised flower stalk">
+            <img id="plants" src="images/poppy.png" alt="The outline of a stylised poppy seed head">
+            <img id="plantsS" src="images/flowerPoppyFlip.png" alt="The outline of a stylised poppy seed head">
+            <img id="plants" src="images/lavendar.png" alt="The outline of a stylised poppy seed head">
+            <h1 id="welcome">Katie's awesome and very cool gardening app!</h1>
+        
+            <img id="plants" src="images/lavendarFlip.png" alt="The outline of a stylised poppy seed head">
+            <img id="plantsS" src="images/flowerPoppy.png" alt="The outline of a stylised poppy seed head">
+            <img id="plants" src="images/poppy.png" alt="The outline of a stylised poppy seed head">
+            <img id="plantsL" src="images/flowers.png" alt="The outline of a stylised flower stalk">
+            <img id="plants" src="images/botanicalFlip.png" alt="The outline of a stylised leaf">
+        </div>
+    </div>
+    <div class="row">
+        <div  class="col-md-8"></div>
+        <h2 id="wantToDo">What would you like to do?</h2>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="buttons" class="buttoncontainer">
+                <button class="button" id="create">create</button>
+                <button class="button" id="read">read</button>
+                <button class="button" id="readById">read by ID</button>
+                <button class="button" id="update">update</button>
+                <button class="button" id="delete">delete</button>
+                <button class="button" id="deleteAll">delete all entries</button>
+                <button class="button" id="clear">reset this page</button>
+            </div>
+            <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <div id="theform" class="formcontainer">
+                        <form id="createForm">
+                            <label class="label" id="inputBox" for="plantName">Plant name:</label><br>
+                            <input class="input" type="text" id="inputBoxActual" name="plantName"><br>
+                            <label class="label" id="inputBox" for="foliageCol">Foliage colour:</label><br>
+                            <input class="input" type="text" id="inputBoxActual" name="foliageCol"><br>
+                            <label class="label" id="inputBox" for="when">Planting month:</label><br>
+                            <input class="input" type="text" id="inputBoxActual" name="when"><br>
+                            <label class="label" id="inputBox" for="position">Planting position:</label><br>
+                            <input class="input" type="text" id="inputBoxActual" name="position"><br>
+                            <label class="label" id="inputBox" for="flowerCol">Flower colour:</label><br>
+                            <input class="input" type="text" id="inputBoxActual" name="pic"><br>
+                            <label class="label" id="idInput" for="idInput">ID input:</label><br>
+                            <input class="input" type="number" id="idInputActual" name="id"><br>
+                           
+                            <div id="formButtonContainer">
+                                <button class="formButton" id="submit">Submit</button>
+                                <button class="formButton" id="reset">Reset</button>
+                            </div>
+                    </form>
+                            </div>
+                            
+        </div>
+        <div class="col-md-8">
+            
+            <div id="doWhat"> 
+                <h2 id="doingWhat" ></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div id="outputContainer" class="col-md-4-12">
+            This will be the output
+
+        </div>
+
+    </div>
+        
+      </div>
+     
+    <script src="project1stpass.js"></script>
+</body>
+</html>

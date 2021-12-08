@@ -1,5 +1,20 @@
 "use strict";
 
+const promisesPromises = new Promise((resolve, reject) => {
+    const rand = Math.random();
+
+    console.log("Start of promise");
+    setTimeout(() => {
+        if (rand > 0.5) {
+            resolve("Hurrah!");
+        } else {
+            reject("Sad face!");
+        }
+    }, 5_000);
+
+    console.log("End of promise");
+});
+
 // event listeners for all buttons
 const buttons = document.querySelectorAll(".button");
 // const output = document.querySelector("div#history");
@@ -58,7 +73,7 @@ const readById = () => {
     console.log("in the readById function");
     deselectForm();
     highlightIdInput();
-    document.querySelector("#doingWhat").textContent = "Please enter the id of the plant you would like to find";
+    document.querySelector("#wantToDo").textContent = "Please enter the id of the plant you would like to find";
 }
 const update = () => {
     console.log("in the update function");
@@ -96,7 +111,7 @@ buttons.forEach(btn => {
             create();
         } else if (event.target.innerText === "read") {
             read();
-        } else if (event.target.innerText === "read by id") {
+        } else if (event.target.innerText === "read by ID") {
             readById();
         } else if (event.target.innerText === "update") {
             update();
@@ -104,8 +119,7 @@ buttons.forEach(btn => {
             deleteById();
         } else if (event.target.innerText === "reset this page") {
             clear();
-        }
-        else if (event.target.innerText === "delete all entries") {
+        } else if (event.target.innerText === "delete all entries") {
             deleteAll();
         }
     });

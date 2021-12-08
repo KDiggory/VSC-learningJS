@@ -34,7 +34,6 @@ button {
     border-width: 10px, 10px;
     border-radius: 10px;
     background: rgb(162, 185, 162);
-    margin: 2px auto 15px;
     padding: 15px;
     width: 15%;
 }
@@ -43,14 +42,14 @@ button {
     display: flex;
     justify-content: center;
     flex-direction: row ; 
+    
 }
 
 #formButtons {
     display:inline-block;
     width: 250%;
     margin: 1px 39px 1px;
-
-
+   
 }
 
 .formcontainer{

@@ -1,0 +1,155 @@
+/* This makes the background gradient and moves it across the screen */
+body {
+	background: linear-gradient(270deg, #828f7d, #b3b47e, #a1999a, #5c9c74);
+	background-size: 600% 600%;
+	-webkit-animation: Gradient 60s ease infinite;
+	-moz-animation: Gradient 60s ease infinite;
+	animation: Gradient 60s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+/* This will make the images at the top smaller */
+
+h2 {
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:200%;
+}
+
+#plants {
+    height: 10%;
+    width: auto;
+  }
+  #plantsL {
+    height: 10%;
+    width: auto;
+  }
+
+  #plantsS {
+    height: 10%;
+    width: auto;
+  }
+
+.leafContainer {
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin-bottom: -37%;
+  }
+
+  #welcome {
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:350%;
+    text-align: center;
+
+  }
+
+  #wantToDo {
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:200%;
+    text-align: center;
+  }
+
+  .buttoncontainer {
+    display: flex;
+    justify-content: center;
+    /* justify-content: center; */
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:150%;
+    text-align: center;
+  }
+
+  .button {
+      margin-left: 2%;
+  }
+
+  #theform {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:120%;
+    text-align: center;
+    margin-left: 2%;
+  }
+
+  .label {
+    width:120%;
+  }
+.input {
+    width:120%;
+}
+
+button {
+  color: black;
+  -webkit-text-stroke: 1.5px black;
+  font-family: 'Almendra Display';
+  font-size:120%;
+  border: solid rgb(0, 0, 0);
+  border-width: 10px, 10px;
+  border-radius: 10px;
+  background: rgb(162, 185, 162);
+  margin: 2px auto 15px;
+  padding: 15px;
+  width: 15%;
+}
+
+#formButtonContainer {
+    width:120%;
+}
+.formButton {
+  display:inline-block;
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#doWhat {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:120%;
+    margin-left: -20%;
+}
+
+#outputContainer {
+    justify-content: flex-start;
+    color: black;
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Almendra Display';
+    font-size:150%;
+    display: flex;
+    margin-left: 20.5%;
+    margin-top: -21%;
+   
+
+}
